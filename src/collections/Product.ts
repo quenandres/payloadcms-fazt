@@ -7,6 +7,11 @@ const Products: CollectionConfig = {
   },
   access: {
     read: () => true,
+    create:() => true
+  },
+  labels: {
+    singular: 'product',
+    plural: 'products',
   },
   fields: [
     {
@@ -16,7 +21,21 @@ const Products: CollectionConfig = {
     {
         name: 'description',
         type: 'richText', 
+    },
+    {
+        name: 'price',
+        type: 'number'
+    },
+    {
+        name: 'quantity',
+        type: 'number'
+    },
+    {
+        name: 'image',
+        type: 'upload', // required
+        relationTo: 'media',   
     }
+
   ],
 };
 
