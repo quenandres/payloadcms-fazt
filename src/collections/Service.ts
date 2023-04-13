@@ -26,8 +26,13 @@ const Service: CollectionConfig = {
         name: 'image',
         type: 'upload', // required
         relationTo: 'media',   
+    },
+    {
+      name: 'category', // required
+      type: 'relationship', // required
+      relationTo: 'categories', // required
+      hasMany: true,
     }
-
   ],
 };
 
