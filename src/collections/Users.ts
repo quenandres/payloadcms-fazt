@@ -7,7 +7,7 @@ const Users: CollectionConfig = {
     useAsTitle: 'email',
   },
   access: {
-    read: () => true,
+    read: () => false,
   },
   fields: [
     // Email added by default

@@ -4,6 +4,8 @@ import path from 'path';
 import Users from './collections/Users';
 import Products from './collections/Product';
 import Media from './collections/Media';
+import Category from './collections/Category';
+import Service from './collections/Service';
 
 export default buildConfig({
   serverURL: 'http://localhost:3000',
@@ -13,7 +15,9 @@ export default buildConfig({
   collections: [
     Users,
     Products,
-    Media
+    Media,
+    Category,
+    Service
     // Add Collections here
     // Examples,
   ],
